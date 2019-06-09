@@ -176,6 +176,21 @@ TableInfo.gen = function () {
     }
 };
 
+/**
+ * 字典生成
+ */
+TableInfo.genDoc = function () {
+    var index = layer.open({
+        type: 2,
+        title: '代码生成',
+        area: ['100%', '100%'],//宽高
+        fix: false, //不固定
+        maxmin: true,
+        content: Feng.ctxPath + '/tableinfo/genDoc'
+    });
+    this.layerIndex = index;
+};
+
 TableInfo.formParams = function () {
     var queryData = {};
     return queryData;

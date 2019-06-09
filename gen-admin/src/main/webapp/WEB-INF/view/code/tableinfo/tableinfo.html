@@ -41,6 +41,9 @@
                             @if(shiro.hasPermission("/tableinfo/codegen")){
                             <#button name="生成" icon="fa-play" clickFun="TableInfo.gen()" space="true"/>
                             @}
+                            @if(shiro.hasPermission("/tableinfo/codegen")){
+                            <#button name="生成字典" icon="fa-play" clickFun="TableInfo.genDoc()" space="true"/>
+                            @}
                         </div>
                         <#table id="TableInfoTable"/>
                     </div>
